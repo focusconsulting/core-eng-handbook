@@ -4,7 +4,9 @@ sidebar_position: 4
 
 # Practices
 
-Practices are specific ways that we might enact our values and principles, day-to-day. They may shift and change as the needs of the team and the product demand. There are many different practices that may fulfill a given value or principle. It is always reasonable to suggest a practice may be changed to something else that still fulfills that principle. Being agile means constantly adjusting based on feedback; that includes practices. These particular practices have worked on some of our teams in the past. That doesn't mean they're required. Do with them what you will.
+Practices are specific ways we enact our values and principles, day-to-day. They may shift and change as the needs of the team and the product demand, and it is always reasonable to propose a different practice that fulfills the same principle. Being agile means constantly adjusting based on feedback; that includes practices.
+
+They are not all equally negotiable, though. A few are commitments we hold on every engagement: unit testing, version control, and review before merge. Most of the rest are defaults, like trunk-based development, Ship / Show / Ask, and vertical-slice stories: a team adopts them through its working agreement and amends them in retro, with a reason. The remainder are optional styles that have worked for some of us, like TDD as a way of writing tests or any particular pairing cadence. The tiers keep autonomy honest: change a default when it stops serving the principle, but say why. The commitments are the floor.
 
 Side note: this is why we don't subscribe to dogmatic processes like Scrum. Scrum's premise is that a team adopts a fixed set of practices and unlocks new capability by following them correctly. We work the other way: we start from values and principles and derive practices that serve them. Some Scrum practices do that well, and we use those. But we never run a practice just because it is "part of The Process." We should always be able to justify the why behind a practice, and we have the autonomy to change or drop it as our principles demand.
 
@@ -55,6 +57,14 @@ Short-lived branches and regular merges / rebases with the main branch give us c
 The CI in CI/CD stands for continuous integration, which is synonymous with regular merges to a main branch. When we keep long-lived feature branches, we are no longer continuously (or frequently) integrating with the main trunk, and that fails to uphold this practice. Ideally, feature branches should achieve one single independently deployable unit of work and be quickly merged back to main within a day / couple days. Branches that are running for a week or longer should be assessed for why the anomaly is occuring.
 
 The CD in CI/CD stands for continuous deployment. In an conceptual ideal world, that means every commit to main gets deployed to production when it passes tests (this requires independently deployable commits as described above). In reality, most team use CD to continuously deploy to a dev environment, and then do manual QA checks before approval to go to prod. While this is common, it should go hand-in-hand with a team working agreement on a schedule for making prod deployments happen regularly (one or more times a week is a good target). Remember, if it's not released to production, there is no way to get rapid feedback from users that the solution is solving their problems.
+
+## Observability: watching it work
+
+Rapid feedback from production only happens if someone can see production. Every deploy needs two things: error tracking that tells us when the golden path breaks, and a way to watch the success signal named when the story was made Ready (see the Definition of Ready), whether that is an analytics event, a metric, or a log we check. "Watch it work in production" is a practice, not a hope; if a story ships and nothing can observe it, the feedback loop never opened.
+
+### When production breaks
+
+A broken production is the team's first priority, the same as a red main: roll back or fix forward, whichever is faster and safer. Afterward, take a blameless look at what happened (failure is blameless; we would rather fail fast and learn) and land the learning somewhere durable: the retro, an ADR, or a test that would have caught it.
 
 ## Flaky tests and failing tests are worse than having no tests at all
 
