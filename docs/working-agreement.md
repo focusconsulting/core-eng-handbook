@@ -28,7 +28,7 @@ It is a living document. We own it, and we change it whenever it stops serving u
 
 - Technical decisions rest with the engineers doing the work (developer trust & autonomy). We own the outcomes, and we communicate the implications, especially tradeoffs like tech debt, to our PM and team.
 - We hold strong opinions loosely. We argue, we decide, and then we commit. When we are stuck, we return to our shared values to find the way forward.
-- We trust by default. Review before merge is our baseline, not a trust failure. Before adding anything heavier (extra required approvers, protected branches, locked-down areas), we say why the default trust falls short here.
+- We trust by default. Review before merge is our baseline, not a trust failure, and requiring green CI on main is hygiene, not distrust. Before adding anything heavier (multiple required approvers, sign-off gates, locked-down areas), we say why the default trust falls short here.
 
 ## How we handle the code
 
