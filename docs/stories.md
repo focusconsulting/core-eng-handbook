@@ -27,7 +27,7 @@ A useful checklist is INVEST. A good story is:
 
 ## Acceptance criteria
 
-Acceptance criteria define done in terms anyone can check. They are the story's tests, written in English before the code. They feed estimation directly (criteria count and complexity drive the points) and they become the spine of the Definition of Done.
+Acceptance criteria define done in terms anyone can check. They are the story's tests, written in English before the code. They feed estimation directly (their complexity, more than their count, drives the points) and they become the spine of the Definition of Done.
 
 Keep them about behavior and outcome, not implementation. "The user sees a confirmation after saving" is a criterion. "Use a Postgres trigger" is not.
 
