@@ -1,5 +1,5 @@
 ---
-sidebar_position: 11
+sidebar_position: 10
 ---
 
 # Code Review
@@ -58,4 +58,4 @@ Code written by two people has already been reviewed continuously, line by line,
 
 The one limit: pairing does not clear the always-Ask changes above. Authentication, migrations, PII, and public-facing accessibility still want a separate reviewer, because the exposure there is legal or security risk, not just code quality, and two people who built it together share the same blind spots.
 
-_Last updated: Jun 29, 2026_
+_Last updated: Jul 2, 2026_

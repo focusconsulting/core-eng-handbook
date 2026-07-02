@@ -14,13 +14,13 @@ Side note: this is why we don't subscribe to dogmatic processes like Scrum. Scru
 
 Pair programming supports the principles of shared context and shared responsibility because when two people work together on the same problem and piece of code, they automatically prevent silos. It also supports continuous improvement because engineers working together will naturally learn from each other and grow as a result.
 
-We have no particular rules about pair programming cadence -in conjunction with our principle of developer trust & autonomy, we trust developers to pair when it makes sense and solo when it makes sense. Join the `#engineering-pairing-is-caring` channel in Slack to join in for fortnightly (that's every two weeks!) sessions to encourage pairing across projects.
+We have no particular rules about pair programming cadence; in conjunction with our principle of developer trust & autonomy, we trust developers to pair when it makes sense and solo when it makes sense. Join the `#engineering-pairing-is-caring` channel in Slack to join in for fortnightly (that's every two weeks!) sessions to encourage pairing across projects.
 
 ## Test-Driven Development (TDD)
 
 Unit testing is always something we do, non-negotiably. However, test-driven development (TDD) is one particular style of testing that has proven beneficial and embraces several of our stated principles. As a summary, it is the process of writing a failing test, adding the simplest possible code to get that test passing, and then refactoring as needed, then iterating (this cycle is termed red-green-refactor).
 
-It supports rapid feedback -when each piece of code is written in service of getting a failing test passing, you get immediate feedback if the code works (because if it works, the test passes).
+It supports rapid feedback: when each piece of code is written in service of getting a failing test passing, you get immediate feedback if the code works (because if it works, the test passes).
 
 It supports iteration and iterative development by asking developers to code one test at a time, iterating from the simplest possible implementation to the one that solves the problem to the exact complexity required by the tests.
 
@@ -40,7 +40,7 @@ When we write a user story, we are attempting to define the smallest possible ve
 
 ## Independently-deployable, green commits
 
-A good practice is to have every commit to the main branch be an iterative development that maintains the cleanliness of the main branch. Every commit should add some small incremental value (even if it's not a whole story). It should be independently deployable, so that it could theoretically be pushed to production without any further dependencies. And it should be "green" -ie, every commit should include a fully passing test suite. Partially-incomplete commits will make it hard to debug what introduced a problem when bugs do occur.
+A good practice is to have every commit to the main branch be an iterative development that maintains the cleanliness of the main branch. Every commit should add some small incremental value (even if it's not a whole story). It should be independently deployable, so that it could theoretically be pushed to production without any further dependencies. And it should be "green": every commit should include a fully passing test suite. Partially-incomplete commits will make it hard to debug what introduced a problem when bugs do occur.
 
 ## Trunk-based development
 
@@ -54,7 +54,7 @@ Short-lived branches and regular merges / rebases with the main branch give us c
 
 ## Continuous Integration / Continuous Deployment (CI/CD)
 
-The CI in CI/CD stands for continuous integration, which is synonymous with regular merges to a main branch. When we keep long-lived feature branches, we are no longer continuously (or frequently) integrating with the main trunk, and that fails to uphold this practice. Ideally, feature branches should achieve one single independently deployable unit of work and be quickly merged back to main within a day / couple days. Branches that are running for a week or longer should be assessed for why the anomaly is occuring.
+The CI in CI/CD stands for continuous integration, which is synonymous with regular merges to a main branch. When we keep long-lived feature branches, we are no longer continuously (or frequently) integrating with the main trunk, and that fails to uphold this practice. Ideally, feature branches should achieve one single independently deployable unit of work and be quickly merged back to main within a day / couple days. Branches that are running for a week or longer should be assessed for why the anomaly is occurring.
 
 The CD in CI/CD stands for continuous deployment. In an conceptual ideal world, that means every commit to main gets deployed to production when it passes tests (this requires independently deployable commits as described above). In reality, most team use CD to continuously deploy to a dev environment, and then do manual QA checks before approval to go to prod. While this is common, it should go hand-in-hand with a team working agreement on a schedule for making prod deployments happen regularly (one or more times a week is a good target). Remember, if it's not released to production, there is no way to get rapid feedback from users that the solution is solving their problems.
 
@@ -93,9 +93,9 @@ Different types of refactoring:
 
 ## Estimating in complexity, not time
 
-Some teams don't estimate work at all; that's fine. When we do want to estimate work for one reason or another (and we should always have a reason -see the note at the start of this section about practices always having a _Why_, and being derived from principles), we estimate in units of complexity, not time. It's very hard to accurately say "this story will take a half-day to complete" -engineers are notoriously bad at estimating time. However, it's much easier to say "this thing is twice as complex as that other thing".
+Some teams don't estimate work at all; that's fine. When we do want to estimate work for one reason or another (and we should always have a reason; see the note at the start of this section about practices always having a _Why_, and being derived from principles), we estimate in units of complexity, not time. It's very hard to accurately say "this story will take a half-day to complete"; engineers are notoriously bad at estimating time. However, it's much easier to say "this thing is twice as complex as that other thing".
 
-Additionally, because we value shared context / shared responsibility, we avoid estimating in time because we want to devote energy to building a robust, un-siloed team. Time estimates for tickets are subjective -a story might take a half-day if the Senior Engineer implements it, but might take a full day if the Junior Engineer worked on it. However, complexity is more objective regardless of who works on it.
+Additionally, because we value shared context / shared responsibility, we avoid estimating in time because we want to devote energy to building a robust, un-siloed team. Time estimates for tickets are subjective: a story might take a half-day if the Senior Engineer implements it, but might take a full day if the Junior Engineer worked on it. However, complexity is more objective regardless of who works on it.
 
 See the [Estimation](./estimation.md) page for the fuller rationale, including how time estimates create knowledge silos.
 
@@ -111,4 +111,4 @@ ADRs are append-only. We don't edit a decision when it changes; we write a new o
 
 This practice earns its keep most on a team of one. A solo engineer has no pair and no reviewer holding the why, so the repo has to. An ADR is how a one-person engagement keeps its lottery count above one: it is the context a future teammate, or a returning client, inherits instead of reconstructs.
 
-_Last updated: Jun 25, 2026_
+_Last updated: Jul 2, 2026_

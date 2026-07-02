@@ -73,4 +73,4 @@ That said, when refining dev-specific chores, we size them to compare relative e
 | Large | • Impacts multiple components or systems<br/>• Requires careful planning and incremental approach<br/>• Comprehensive testing strategy | Migrating from one logging framework to another throughout the codebase |
 | Extra Large | • Cross-cutting architectural changes<br/>• Significant risks to system stability<br/>• Would require multiple sprints if not broken down | Breaking a monolithic component into microservices or upgrading a major framework version with breaking changes |
 
-_Last updated: Jun 16, 2026_
+_Last updated: Jul 2, 2026_

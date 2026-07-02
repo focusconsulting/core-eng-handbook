@@ -6,7 +6,7 @@ sidebar_position: 5
 
 This is how our team works. Not how we are told to work, but what we have agreed, together, to expect of one another. It is the day-to-day expression of our values and principles: where those say what we believe, this says what we will actually do.
 
-It is a living document. We own it, and we change it whenever it stops serving us (see continuous improvement). Bracketed items, like [core hours], are decisions each team makes for itself and fills in. Everything else is our shared default, adopted from this handbook and amended by us in retro.
+It is a living document. We own it, and we change it whenever it stops serving us (see continuous improvement). Items like core hours and the cadences below are decisions this team made for itself, and re-makes whenever the team or the work changes. Everything else is our shared default, adopted from this handbook and amended by us in retro.
 
 ## How we treat each other
 
@@ -63,4 +63,4 @@ Each of these earns its place. We drop or reshape any that stops being worth the
 - **Demo / review** — Sprint Review every two weeks (Tuesday), plus a stakeholder demo monthly. We show working software and gather feedback.
 - **Dev / design sync** — design sync every two weeks (Wednesday).
 
-_Last updated: Jun 29, 2026_
+_Last updated: Jul 2, 2026_

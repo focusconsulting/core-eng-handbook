@@ -34,4 +34,4 @@ A story is complete when it meets the Definition of Done, which means it is depl
 
 Then close the loop. Watch it work in production, and feed what you learn into the next story. That is where the iteration starts again.
 
-_Last updated: Jun 16, 2026_
+_Last updated: Jul 2, 2026_

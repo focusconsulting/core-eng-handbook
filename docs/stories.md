@@ -46,4 +46,4 @@ Patterns that split while keeping each piece valuable:
 
 The test after splitting is the same as before: can each piece ship on its own and teach us something? If yes, you have stories. If no, keep cutting.
 
-_Last updated: Jun 29, 2026_
+_Last updated: Jul 2, 2026_

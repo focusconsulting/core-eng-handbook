@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 11
 ---
 
 # Responsibilities
@@ -31,7 +31,7 @@ The legal floor: the Department of Justice's 2024 rule under ADA Title II requir
   - Accessibility issues should also be flagged and fixed in code review
   - Engineers, designers, and PMs should also do a manual accessibility check whenever they are reviewing front-end changes
 - Coordinate and work with outside accessibility testers as needed who are experts in usage of screen readers and similar accessible software tools (talk to your director for contacts).
-- The ADA applies to workplaces, too -not just our public-facing projects. We should keep accessibility in mind as we choose vendors, write documents, present our work, and build internal tools.
+- The ADA applies to workplaces, too, not just our public-facing projects. We should keep accessibility in mind as we choose vendors, write documents, present our work, and build internal tools.
 
 We also have the `#accessibility-all` Slack channel for posting a11y questions and soliciting advice and discussion from our champion panel of a11y-trained staff.
 
@@ -48,7 +48,7 @@ We also have the `#accessibility-all` Slack channel for posting a11y questions a
 ## Cross-functional technical responsibility
 
 - You are a software engineer on a cross-functional team, and you are responsible for representing the voice of technical feasibility to your team.
-- You are responsible for being an active member of a team that follows user-centered design principles. You should always be putting the user first in everything you do -that is not just the responsibility of PMs and designers.
+- You are responsible for being an active member of a team that follows user-centered design principles. You should always be putting the user first in everything you do; that is not just the responsibility of PMs and designers.
 - You are responsible for taking ownership of product stewardship, and having an opinion on the trajectory of the product. You are not a coding vessel that the PM dictates requirements to. You are a fully-functioning member of a team of equals.
 - You will need to communicate with a variety of stakeholders across various practices, from government agencies to partners to vendors, and more. You are responsible for communicating our needs (whole team or engineering team) and our objectives clearly and succinctly, and without technical jargon. You will need to be able to communicate the what and why of what you're building, not just the how.
 
@@ -57,7 +57,7 @@ We also have the `#accessibility-all` Slack channel for posting a11y questions a
 - Consider blurring your video background or using a virtual background when on a call with external stakeholders. We have a folder of company-branded virtual backgrounds which you can download.
 - When on a call with external/partner stakeholders, consider dressing business-casual (wear a nice shirt).
 - We have access to several tools and collaboration cloud platforms that external partners cannot and do not use. Again, we want to maximize collaboration and de-emphasize our unique status when working with external partners.
-  - Partners do not have/use Google. Do not link them to Google Drive documents -copy the contents into a Microsoft Office365 document instead if you need them to have access. (It's okay to show Google docs and decks when screensharing)
+  - Partners do not have/use Google. Do not link them to Google Drive documents; copy the contents into a Microsoft Office365 document instead if you need them to have access. (It's okay to show Google docs and decks when screensharing)
   - Partners do not have/use Zoom. Use Microsoft Teams for calls with external stakeholders.
   - Partners do not have/use Slack. Expect to communicate with them using email or Microsoft Teams.
 - Exercise common sense when interacting and communicating with stakeholders
@@ -65,4 +65,4 @@ We also have the `#accessibility-all` Slack channel for posting a11y questions a
   - Be aware of the context in how we have communicated with someone in the past and what they may or may not be aware of in working with our organization. It's your responsibility to seek out this context as you engage in communications with stakeholders.
   - Talk to your engineering director or a senior leader if you have a new stakeholder or partner. It's your responsibility to know how we exist as an organization to a new stakeholder or partner.
 
-_Last updated: Jun 24, 2026_
+_Last updated: Jul 2, 2026_
