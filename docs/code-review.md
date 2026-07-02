@@ -14,9 +14,9 @@ Ask is our default. Every change is reviewed and approved before it merges, unle
 
 - **Ask.** Open a pull request and wait for review and approval before merging. This is the default for everything. It is always the path, whatever standing exceptions exist, when you are uncertain, when the change is high-risk or hard to reverse, or when it touches security or sensitive data.
 - **Show.** Merge to main, then open a pull request (or post the diff) for visibility. You are not blocked on a response, but the change still gets eyes after the fact. For an agreed low-risk change worth sharing: a pattern others should see, a decision worth recording.
-- **Ship.** Merge to main without review. This is the natural home for low-risk, non-feature work: chores, debug and spike commits, trivial refactors, copy fixes, and changes fully covered by tests. Most of the bug/chore/spike category from [estimation](./estimation.md) Ships by default; it carries little risk and rarely repays a blocking review. Feature work tends the other way, toward Ask.
+- **Ship.** Merge to main without review. The natural candidates are low-risk, non-feature work: chores, debug and spike commits, trivial refactors, and copy fixes. Bug fixes are not Ship candidates: a bug is proof that someone's understanding of that code already failed once, so fixes take Ask by default (or Show, by standing agreement). Feature work tends the other way, toward Ask.
 
-Beyond that baseline, extending Show and Ship is a standing team decision, not a per-change judgment call. A team agrees the further classes of change it will trust with less scrutiny and says why (autonomy is empowerment plus responsibility; trust is justified, not assumed). As trust and shared context grow, a team widens what it lets Show and Ship. When in doubt, Ask.
+This handbook grants no standing exceptions. Every Show and Ship class, including the candidates named above, is a team decision made in advance and recorded, never a per-change judgment call. A team agrees the classes of change it will trust with less scrutiny and says why (autonomy is empowerment plus responsibility; trust is justified, not assumed). As trust and shared context grow, a team widens what it lets Show and Ship. When in doubt, Ask.
 
 **Some changes are always Ask, whatever standing exceptions your team has and whatever your confidence:** authentication and authorization, database migrations, anything touching PII or secrets, and changes that affect the accessibility of a public-facing page. The exposure here is legal or security risk (see responsibilities), which sits above individual judgment. No Show or Ship exception covers these.
 
@@ -54,7 +54,7 @@ Big reviews get rubber-stamped. A 1,000-line PR earns a "looks good"; a 50-line 
 
 ## Pairing is review
 
-Code written by two people has already been reviewed continuously, line by line, by someone who shares the full context. Paired work can usually Ship: the review has already happened, in real time. Pairing and review are two points on one spectrum: both spread context and catch problems early. Choose whichever delivers the right feedback at the right moment.
+Code written by two people has already been reviewed continuously, line by line, by someone who shares the full context. A pair is a reviewer: paired work satisfies the review requirement and merges as Show, opening a post-merge pull request for visibility rather than waiting on a second approval. Pairing and review are two points on one spectrum: both spread context and catch problems early. Choose whichever delivers the right feedback at the right moment.
 
 The one limit: pairing does not clear the always-Ask changes above. Authentication, migrations, PII, and public-facing accessibility still want a separate reviewer, because the exposure there is legal or security risk, not just code quality, and two people who built it together share the same blind spots.
 

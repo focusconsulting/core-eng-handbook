@@ -57,6 +57,8 @@ The other categories of stories are considered part of normal software product o
 
 These tickets might be a sign of (partially) incomplete acceptance criteria and thus allow us to track and complete acceptance criteria after a ticket might have already been deployed to staging or production and considered done. These tickets are also worked on and created by engineers handling DevOps and maintenance work as they attempt to support and streamline the codebase, thus increasing our velocity over time. If a ticket feels like it should have points, we should ask ourselves if it's a feature instead.
 
+Note that much of this category may also take a lighter review path (see [code review](./code-review.md)), though bug fixes do not. Unpointed and lightly reviewed must not mean invisible: maintenance-day pickup and the retro velocity check are where this work stays seen.
+
 ### Chores Sizing
 
 That said, when refining dev-specific chores, we size them to compare relative effort and to acknowledge we have reviewed them for pickup on a maintenance day like in Friday tasks. This is their sizing breakdown:
