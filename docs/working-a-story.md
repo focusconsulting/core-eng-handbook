@@ -22,7 +22,7 @@ Inside the story, work in small, green, independently deployable commits on shor
 
 ## Bucket brigades: working a story together
 
-A bucket brigade is a way for a team to flow one story through its stages together, like passing buckets down a line. Rather than each engineer carrying a separate story end to end, work moves hand to hand: one person starts the API, hands off to whoever is free for the UI, who hands off for tests, while attention converges on whatever stage is the current bottleneck.
+A bucket brigade is a way for a team to flow one story through its stages together, like passing buckets down a line. Rather than each engineer carrying a separate story end to end, work moves hand to hand: one person starts the API test-first, hands the slice to whoever is free to build the UI on it, and another hardens edge cases and error handling, while attention converges on whatever stage is the current bottleneck. Tests travel with every stage (we test as we go); they are not a stage of their own at the end of the line.
 
 It is the antidote to a lottery count of 1. Because several people touch each story, context spreads automatically and no single story depends on a single person. It also gets stories to done faster, since the team's effort pools on finishing rather than scattering across many half-built tracks.
 
