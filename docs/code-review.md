@@ -28,7 +28,7 @@ Automated checks (tests, linting, type-checking, and accessibility scans where a
 - **Readability and maintainability:** would someone joining tomorrow understand this? Naming, structure, clarity.
 - **Design:** is this the simplest thing that works? Does it fit the existing system or quietly fork it?
 - **Security and data handling:** secrets, access control, PII (see responsibilities).
-- **Accessibility:** the roughly 30% automated tools miss (see responsibilities).
+- **Accessibility:** the half or more that automated tools miss (see responsibilities).
 
 You share responsibility for code you review. Approving means you understand it and stand behind it.
 

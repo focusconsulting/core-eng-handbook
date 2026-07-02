@@ -24,12 +24,10 @@ As a software engineer on a cross-functional team, you are responsible for:
 
 ## Accessibility
 
-Government entities are required by the ADA to conform to WCAG 2.2 level AA standards. You can find the applicable accessibility rules for websites for your jurisdiction here.
-
-The Web Content Accessibility Guidelines (WCAG) 2.2 Level AA, or the most up-to-date version of the guidelines, shall be the accessibility standard for the web pages, sites, and services of all government agencies. Each web page, site, and service shall be configured in such a way that it can be navigated, viewed, and accessed on a smartphone, tablet computer, or similar mobile device.
+The legal floor: the Department of Justice's 2024 rule under ADA Title II requires state and local government web content to conform to [WCAG 2.1 Level AA](https://www.ada.gov/resources/2024-03-08-web-rule/), with compliance dates phased by entity size (April 2026 or April 2027); federal work under Section 508 references WCAG 2.0 AA. Our working standard is WCAG 2.2 Level AA, which satisfies both. Everything we build should be navigable, viewable, and usable on a smartphone, tablet, or similar mobile device.
 
 - Automated a11y testing should be used on any project with a frontend that we can change. (If it's a vendor frontend, we should manually test and report issues to the vendor.) Many of our teams use Deque's axe tool or a library based on it in integration or e2e tests.
-- Automated tools can only catch ~70% of issues. They cannot detect usability problems (nonsensical headers, alt text that is too long, etc). Therefore:
+- Automated tools catch roughly a third to a half of issues at best (the UK Government Digital Service measured ~30-40%; Deque claims ~57% for axe). They cannot detect usability problems (nonsensical headers, alt text that is too long, etc). Therefore:
   - Accessibility issues should also be flagged and fixed in code review
   - Engineers, designers, and PMs should also do a manual accessibility check whenever they are reviewing front-end changes
 - Coordinate and work with outside accessibility testers as needed who are experts in usage of screen readers and similar accessible software tools (talk to your director for contacts).
