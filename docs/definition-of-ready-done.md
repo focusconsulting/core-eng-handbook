@@ -29,12 +29,14 @@ A story is done when:
 - Tests are written and green (see TDD and our note on flaky tests).
 - The change has been reviewed and approved before merge (ship / show / ask, Ask by default).
 - It is merged to main as an independently deployable, green commit.
-- It is deployed to the agreed environment.
+- It is deployed to production.
 - Accessibility is checked, including the manual pass automated tools miss (see responsibilities).
+- Security basics hold: no secrets in the change, access control and PII handling follow our responsibilities, and always-Ask changes (see code review) received their review.
+- The success signal named at Ready is being watched (see the observability practice).
 - Documentation is updated where the change calls for it.
 
-The load-bearing item is deployment. Done means the work is in front of users where the feedback loop can begin, not "it works on my branch." A feature finished but not deployed is providing no value and is, by our definition, not done (see CI/CD and estimation). Hold that line, because the moment "done" drifts back to "merged," we have rebuilt the mini-waterfall.
+The load-bearing item is deployment. Done means the work is in front of users where the feedback loop can begin, not "it works on my branch." A feature finished but not deployed is providing no value and is, by our definition, not done (see CI/CD and estimation). Hold that line, because the moment "done" drifts back to "merged," we have rebuilt the mini-waterfall. If your pipeline batches production pushes (see CI/CD), the story is done at the production push, not the staging one; a weekly deploy cadence keeps that gap short.
 
-One honest exception. On some engagements production is genuinely out of our hands: a partner controls the release, access is gated, or a legal or security sign-off stands between staging and production. There, "deployed to the agreed environment" means deployed as far as we are permitted, and the remaining gate is named on the story, owned by a person, and given a date. That is a different thing from a finished feature sitting un-deployed because no one pushed it. Name the blocker; never let it become cover for "done" sliding back to "merged."
+One honest exception. On some engagements production is genuinely out of our hands: a partner controls the release, access is gated, or a legal or security sign-off stands between staging and production. There, the deployment item means deployed as far as we are permitted, and the remaining gate is named on the story, owned by a person, and given a date. That is a different thing from a finished feature sitting un-deployed because no one pushed it. Name the blocker; never let it become cover for "done" sliding back to "merged."
 
 _Last updated: Jun 29, 2026_
