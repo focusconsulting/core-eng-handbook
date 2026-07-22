@@ -45,7 +45,7 @@ Acceptance criteria tell you that you built the thing right. They do not tell yo
 
 ## Splitting a story
 
-When a story is too big (an 8 is a strong signal; see estimation), split it. Split along lines of value, never along technical layers. "Build the backend" is not a story, because it delivers nothing a user can use until the frontend lands. That is the mini-waterfall the vertical-slice practice exists to prevent.
+When someone believes a story is too big (an 8 is a strong signal; see estimation), split it. Split along lines of value, never along technical layers. "Build the backend" is not a story, because it delivers nothing a user can use until the frontend lands. That is the mini-waterfall the vertical-slice practice exists to prevent.
 
 Patterns that split while keeping each piece valuable:
 
@@ -55,5 +55,7 @@ Patterns that split while keeping each piece valuable:
 - **By acceptance criterion**, when one story has quietly become several.
 
 The test after splitting is the same as before: can each piece ship on its own and teach us something? If yes, you have stories. If no, keep cutting.
+
+Anyone is empowered to split a ticket if they believe a split is appropriate.
 
 _Last updated: Jul 2, 2026_
