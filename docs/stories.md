@@ -10,11 +10,21 @@ Stories exist to give us three things: a feedback loop (ship it, learn from it),
 
 ## What a good story looks like
 
-Write from the user's point of view, and lead with the value:
+A good story should be written in plain English, generally without using technical jargon. Stories should be concise and only include the information
+an engineer needs to implement the ticket. Descriptions should be easily digestable and exclude unnecessary verbiage, particularly information and
+requirements that are implicit in the work.
+
+Stories should not begin with "[A]s a user, I want to do something." It is implied that the user wants to do something, and therefore unnecessary.
+
+Take, for example, this kind of user story:
 
 > As a [kind of user], I want [some capability], so that [some outcome].
 
-The format is a tool, not a ritual. The clause that matters is the last one. If you can't name the outcome, you don't yet have a story worth pulling. Don't cargo-cult the template onto work that has no user (those are chores).
+The outcome is likely implicit in the cabability, so it's unnecesary to include it.
+
+This story be re-written plainly like:
+
+> We need to add the ability for a [kind of user] to do something.
 
 A useful checklist is INVEST. A good story is:
 
@@ -27,7 +37,7 @@ A useful checklist is INVEST. A good story is:
 
 ## Acceptance criteria
 
-Acceptance criteria define done in terms anyone can check. They are the story's tests, written in English before the code. They feed estimation directly (their complexity, more than their count, drives the points) and they become the spine of the Definition of Done.
+Acceptance criteria define done in terms anyone can check. They are the story's tests, **written in English before the code**. They feed estimation directly (their complexity, more than their count, drives the points) and they become the spine of the Definition of Done.
 
 Keep them about behavior and outcome, not implementation. "The user sees a confirmation after saving" is a criterion. "Use a Postgres trigger" is not.
 
