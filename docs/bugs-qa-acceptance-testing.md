@@ -19,6 +19,14 @@ Anyone who finds a bug should record it in the team's tracker. Do not wait for a
 
 For an outage, security issue, data loss, or data corruption, use the team's incident or escalation path immediately. The bug ticket records the work; it does not replace the alert.
 
+## Can the person who finds a bug fix it?
+
+Yes. An engineer who finds a bug may investigate and fix it when the expected behavior is clear and the work fits the team's current priorities. Record the bug, link the fix, and use the Ask review path by default.
+
+Check with product or design when the expected behavior is unclear, the proposed fix changes acceptance criteria or user experience, or the work is large enough to affect planned priorities.
+
+These permissions do not replace the incident path or the stronger review and verification required for higher-risk changes.
+
 ## Triage and manage it
 
 Product and engineering triage bugs together. Confirm the behavior, identify duplicates, separate impact from urgency, and choose an owner and next step. Severity describes how much the bug hurts; priority describes when the team will address it.
