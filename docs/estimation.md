@@ -61,6 +61,8 @@ These tickets might be a sign of (partially) incomplete acceptance criteria and 
 
 Note that much of this category may also take a lighter review path (see [code review](./code-review.md)), though bug fixes do not. Unpointed and lightly reviewed must not mean invisible: maintenance-day pickup and the retro velocity check are where this work stays seen.
 
+See [Bugs, QA, and Acceptance Testing](./bugs-qa-acceptance-testing.md) for how to report, triage, verify, and close bugs.
+
 ### Chores Sizing
 
 That said, when refining dev-specific chores, we size them to compare relative effort and to acknowledge we have reviewed them for pickup on a maintenance day like in Friday tasks. This is their sizing breakdown:
@@ -73,4 +75,4 @@ That said, when refining dev-specific chores, we size them to compare relative e
 | Large | • Impacts multiple components or systems<br/>• Requires careful planning and incremental approach<br/>• Comprehensive testing strategy | Migrating from one logging framework to another throughout the codebase |
 | Extra Large | • Cross-cutting architectural changes<br/>• Significant risks to system stability<br/>• Would require multiple sprints if not broken down | Breaking a monolithic component into microservices or upgrading a major framework version with breaking changes |
 
-_Last updated: Jul 2, 2026_
+_Last updated: Jul 30, 2026_
