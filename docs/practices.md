@@ -6,7 +6,7 @@ sidebar_position: 4
 
 Practices are specific ways we enact our values and principles, day-to-day. They may shift and change as the needs of the team and the product demand, and it is always reasonable to propose a different practice that fulfills the same principle. Being agile means constantly adjusting based on feedback; that includes practices.
 
-They are not all equally negotiable, though. A few are commitments we hold on every engagement: unit testing, version control, and review before merge. Most of the rest are defaults, like trunk-based development, Ship / Show / Ask, and vertical-slice stories: a team adopts them through its working agreement and amends them in retro, with a reason. The remainder are optional styles that have worked for some of us, like TDD as a way of writing tests or any particular pairing cadence. The tiers keep autonomy honest: change a default when it stops serving the principle, but say why. The commitments are the floor.
+They are not all equally negotiable, though. A few are commitments we hold on every engagement: unit testing, version control, and an explicit review policy with Ask as the default. Most of the rest are defaults, like trunk-based development and vertical-slice stories: a team adopts them through its working agreement and amends them in retro, with a reason. The remainder are optional styles that have worked for some of us, like TDD as a way of writing tests or any particular pairing cadence. The tiers keep autonomy honest: change a default when it stops serving the principle, but say why. The commitments are the floor.
 
 Side note: this is why we don't subscribe to dogmatic processes like Scrum. Scrum's premise is that a team adopts a fixed set of practices and unlocks new capability by following them correctly. We work the other way: we start from values and principles and derive practices that serve them. Some Scrum practices do that well, and we use those. But we never run a practice just because it is "part of The Process." We should always be able to justify the why behind a practice, and we have the autonomy to change or drop it as our principles demand.
 
@@ -34,9 +34,7 @@ Some engineers here are fans of TDD; here's the justification of some of the ben
 
 ## Small, vertical-slice stories
 
-This follows the principles of iterative development and do what works / do the right thing. When we define a feature and write code around a vertical slice, it means that we focus on delivering one piece of end-to-end value for a user. We work iteratively, but we keep the idea of "user value" as the smallest unbreakable unit of work. If something is not valuable on its own, it is not a valid iteration.
-
-When we write a user story, we are attempting to define the smallest possible vertical slice of work that will provide value to the user. This follows our principle of rapid feedback. Say that we want to build a text field where a user can input and save their name. If we build the frontend components that do nothing when the save button is pressed, then we don't yet have feedback that the feature works. We can't ship a button that does nothing to production. If we first build the backend database logic to handle saving, we don't get feedback from it until it's connected to the frontend that actually makes use of that endpoint. Only together, front-to-back, can this feature provide user value, and that's what makes it a single vertical slice.
+A vertical slice delivers one piece of end-to-end value for a user. If an increment has no value on its own, it is not a valid slice. See [How to Write a Good Story](./stories.md) for how to structure and split stories.
 
 ## Independently-deployable, green commits
 
@@ -93,11 +91,7 @@ Different types of refactoring:
 
 ## Estimating in complexity, not time
 
-Some teams don't estimate work at all; that's fine. When we do want to estimate work for one reason or another (and we should always have a reason; see the note at the start of this section about practices always having a _Why_, and being derived from principles), we estimate in units of complexity, not time. It's very hard to accurately say "this story will take a half-day to complete"; engineers are notoriously bad at estimating time. However, it's much easier to say "this thing is twice as complex as that other thing".
-
-Additionally, because we value shared context / shared responsibility, we avoid estimating in time because we want to devote energy to building a robust, un-siloed team. Time estimates for tickets are subjective: a story might take a half-day if the Senior Engineer implements it, but might take a full day if the Junior Engineer worked on it. However, complexity is more objective regardless of who works on it.
-
-See the [Estimation](./estimation.md) page for the fuller rationale, including how time estimates create knowledge silos.
+Some teams do not estimate work; that is fine. When a team estimates, it uses complexity rather than time so the estimate describes the work instead of the person doing it. See [Estimation](./estimation.md) for the full rationale and guidance.
 
 ## Architecture Decision Records (ADRs)
 
@@ -111,4 +105,4 @@ ADRs are append-only. We don't edit a decision when it changes; we write a new o
 
 This practice earns its keep most on a team of one. A solo engineer has no pair and no reviewer holding the why, so the repo has to. An ADR is how a one-person engagement keeps its lottery count above one: it is the context a future teammate, or a returning client, inherits instead of reconstructs.
 
-_Last updated: Jul 2, 2026_
+_Last updated: Jul 30, 2026_

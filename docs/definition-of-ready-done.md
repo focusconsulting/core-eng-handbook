@@ -27,7 +27,7 @@ A story is done when:
 
 - Every acceptance criterion is met.
 - Tests are written and green (see TDD and our note on flaky tests).
-- The change has been reviewed and approved before merge (ship / show / ask, Ask by default).
+- The change followed the team's agreed review path; Ask changes were approved before merge.
 - It is merged to main as an independently deployable, green commit.
 - It is deployed to production.
 - Accessibility is checked, including the manual pass automated tools miss (see responsibilities).
@@ -39,4 +39,4 @@ The load-bearing item is deployment. Done means the work is in front of users wh
 
 One honest exception. On some engagements production is genuinely out of our hands: a partner controls the release, access is gated, or a legal or security sign-off stands between staging and production. There, the deployment item means deployed as far as we are permitted, and the remaining gate is named on the story, owned by a person, and given a date. That is a different thing from a finished feature sitting un-deployed because no one pushed it. Name the blocker; never let it become cover for "done" sliding back to "merged."
 
-_Last updated: Jul 2, 2026_
+_Last updated: Jul 30, 2026_

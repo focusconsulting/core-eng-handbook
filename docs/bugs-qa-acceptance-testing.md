@@ -21,7 +21,7 @@ For an outage, security issue, data loss, or data corruption, use the team's inc
 
 ## Can the person who finds a bug fix it?
 
-Yes. An engineer who finds a bug may investigate and fix it when the expected behavior is clear and the work fits the team's current priorities. Record the bug, link the fix, and use the Ask review path by default.
+Yes. An engineer who finds a bug may investigate and fix it when the expected behavior is clear and the work fits the team's current priorities. This does not bypass the reporting, review, or verification steps below.
 
 Check with product or design when the expected behavior is unclear, the proposed fix changes acceptance criteria or user experience, or the work is large enough to affect planned priorities.
 
@@ -38,7 +38,7 @@ A triaged bug should have one clear outcome:
 - Prioritize it with the backlog.
 - Close it as a duplicate, expected behavior, or not reproducible, with the reason and evidence recorded.
 
-Keep the owner, status, and blockers current in the tracker. Link the fix to the bug. Bug fixes use the Ask review path by default, and, when practical, include a regression test that fails before the fix and passes afterward.
+Keep the owner, status, and blockers current in the tracker. Link the fix to the bug and follow the team's agreed [code-review path](./code-review.md); Ask is the default. When practical, include a regression test that fails before the fix and passes afterward.
 
 ## Verify and close it
 

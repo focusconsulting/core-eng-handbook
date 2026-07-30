@@ -29,9 +29,7 @@ There are other valid reasons for estimating work, but these are not explicit go
 
 ## ⭐ Features
 
-Feature stories are estimated because they provide user value. As a rule of thumb, changes that we plan on seeking user feedback on, whether the users are external or internal, should be estimated. Typically, users see this value-add immediately as work is marked done and pushed to production regularly, where the feedback loop could begin.
-
-If this feedback loop is blocked (i.e. a feature is completed but not deployed or deployment is significantly delayed), the feature is not providing user value. It essentially creates a mini-waterfall pattern of work. This scenario should be avoided. There is room for allowances, as we are blocked by external parties or extraneous circumstances.
+Feature stories are estimated because they provide user value. Changes that we plan to test with external or internal users are usually features. A feature starts providing value when it reaches users and opens the feedback loop; see the [Definition of Done](./definition-of-ready-done.md).
 
 Feature stories may necessitate pre-factoring, which essentially involves the refactoring of the code base to facilitate the smoother implementation of the feature story. Estimations will include consideration for pre-factoring efforts. This is distinctly different from refactoring chores covered in the following section.
 
@@ -59,7 +57,7 @@ The other categories of stories are considered part of normal software product o
 
 These tickets might be a sign of (partially) incomplete acceptance criteria and thus allow us to track and complete acceptance criteria after a ticket might have already been deployed to staging or production and considered done. These tickets are also worked on and created by engineers handling DevOps and maintenance work as they attempt to support and streamline the codebase, thus increasing our velocity over time. If a ticket feels like it should have points, we should ask ourselves if it's a feature instead.
 
-Note that much of this category may also take a lighter review path (see [code review](./code-review.md)), though bug fixes do not. Unpointed and lightly reviewed must not mean invisible: maintenance-day pickup and the retro velocity check are where this work stays seen.
+Review paths for these tickets, including bug fixes, are defined in [Code Review](./code-review.md). Unpointed and lightly reviewed must not mean invisible: maintenance-day pickup and the retro velocity check are where this work stays seen.
 
 See [Bugs, QA, and Acceptance Testing](./bugs-qa-acceptance-testing.md) for how to report, triage, verify, and close bugs.
 
