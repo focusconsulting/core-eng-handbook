@@ -18,11 +18,7 @@ We don't want a lottery count of 1: one person whose departure would sink the pr
 
 Shared context comes with shared responsibility for the codebase. We follow the campground rule to leave code cleaner than you found it, no matter who wrote it. We also take shared responsibility for the health of the team, and to put time towards activities that better the team at large. This means making time to mentor other team members, or help someone who's stuck. There is no such thing as "not my problem".
 
-Sometimes, we have teams of just 1 engineer. In this case, we still look for ways to share responsibility and context across the team, especially within an initiative. We have the freedom to experiment with ways we can increase **context awareness** even when the responsibility lies on one engineer.
-
-## Context awareness
-
-We aim to have a team where all engineers are at least familiar with the work, challenges, and successes of the rest of the engineering team. Outside of a given initiative where you work closely and frequently, we should at least know what's happening, even if not directly having ownership.
+Sometimes, we have only one engineer on a team. In that case, we still look for ways to share responsibility and context across the initiative. Across initiatives, engineers should remain familiar with the wider engineering team's work, challenges, and successes, even when they do not own that work.
 
 ## Developer trust & autonomy
 
@@ -105,4 +101,4 @@ We refer to the principles of this wiki:
 
 This applies not just to docs on this wiki, but to recommend automating any process with manual or repeatable steps.
 
-_Last updated: Jul 2, 2026_
+_Last updated: Jul 30, 2026_
