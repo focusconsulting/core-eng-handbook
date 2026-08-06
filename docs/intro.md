@@ -25,5 +25,6 @@ For onboarding a new team member, we recommend reading the onboarding guide alou
 8. Definition of Ready / Done
 9. Code Review
 10. Responsibilities
+11. Bugs, QA, and Acceptance Testing
 
-_Last updated: Jul 2, 2026_
+_Last updated: Jul 30, 2026_

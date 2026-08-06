@@ -52,10 +52,24 @@ Big reviews get rubber-stamped. A 1,000-line PR earns a "looks good"; a 50-line 
 - Keep changes small. Vertical-slice stories and green, independently-deployable commits buy you this.
 - Review promptly. An open Ask blocks a teammate; treat it above your own next task. Shared responsibility means their blocker is your blocker.
 
+## Pull request review SLA
+
+Our default pull request review service-level agreement (SLA) sets these targets:
+
+- Acknowledge a review request within the same working day, or early the next working day when it arrives near or outside core hours.
+- Complete the first substantive review by the end of the next working day.
+- Re-review within one working day after the author requests another pass.
+
+The clock starts when the author marks a pull request ready and requests a reviewer. It pauses while the author is responding to feedback or an external blocker prevents review. If a reviewer cannot meet the target, they should say so and help find another reviewer. If the target passes without a response, the author should raise the request in the project channel rather than wait silently.
+
+Urgent production fixes need direct coordination, not a shorter silent timer. A team may adjust these targets in its working agreement, but it should keep the expectation explicit.
+
+Automation can record when review was requested, first submitted, requested again, and approved. It can remind the project channel as a target approaches and show open pull requests by their current state. Use these reports to improve team flow in retro, not to rank individual reviewers. The same principle applies to [QA and acceptance-testing tracking](./bugs-qa-acceptance-testing.md): automate visibility and reminders, not judgment.
+
 ## Pairing is review
 
 Code written by two people has already been reviewed continuously, line by line, by someone who shares the full context. A pair is a reviewer: paired work satisfies the review requirement and merges as Show, opening a post-merge pull request for visibility rather than waiting on a second approval. Pairing and review are two points on one spectrum: both spread context and catch problems early. Choose whichever delivers the right feedback at the right moment.
 
 The one limit: pairing does not clear the always-Ask changes above. Authentication, migrations, PII, and public-facing accessibility still want a separate reviewer, because the exposure there is legal or security risk, not just code quality, and two people who built it together share the same blind spots.
 
-_Last updated: Jul 2, 2026_
+_Last updated: Jul 30, 2026_
