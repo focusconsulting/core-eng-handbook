@@ -10,11 +10,19 @@ Stories exist to give us three things: a feedback loop (ship it, learn from it),
 
 ## What a good story looks like
 
-Write from the user's point of view, and lead with the value:
+A good story should be written in plain English, generally without technical jargon. Stories should be concise and only include the information the team needs to understand and implement the ticket. Descriptions should be easily digestible and exclude unnecessary wording, particularly information and requirements that are already clear from the work.
+
+Stories do not need to begin with "As a user, I want to do something." That format is a tool, not a requirement.
+
+For example:
 
 > As a [kind of user], I want [some capability], so that [some outcome].
 
-The format is a tool, not a ritual. The clause that matters is the last one. If you can't name the outcome, you don't yet have a story worth pulling. Don't cargo-cult the template onto work that has no user (those are chores).
+The same story can be written plainly:
+
+> We need to add [some capability] for [kind of user] so that [some outcome].
+
+Whatever format you choose, keep the user and outcome clear. The outcome gives product a reason to prioritize the work and gives the team a way to tell whether it worked.
 
 A useful checklist is INVEST. A good story is:
 
@@ -27,7 +35,7 @@ A useful checklist is INVEST. A good story is:
 
 ## Acceptance criteria
 
-Acceptance criteria define done in terms anyone can check. They are the story's tests, written in English before the code. They feed estimation directly (their complexity, more than their count, drives the points) and they become the spine of the Definition of Done.
+Acceptance criteria define done in terms anyone can check. They are the story's tests, **written in English before the code**. They feed estimation directly (their complexity, more than their count, drives the points) and they become the spine of the Definition of Done.
 
 Keep them about behavior and outcome, not implementation. "The user sees a confirmation after saving" is a criterion. "Use a Postgres trigger" is not.
 
@@ -35,7 +43,7 @@ Acceptance criteria tell you that you built the thing right. They do not tell yo
 
 ## Splitting a story
 
-When a story is too big (an 8 is a strong signal; see estimation), split it. Split along lines of value, never along technical layers. "Build the backend" is not a story, because it delivers nothing a user can use until the frontend lands. That is the mini-waterfall the vertical-slice practice exists to prevent.
+When someone believes a story is too big (an 8 is a strong signal; see estimation), split it. Split along lines of value, never along technical layers. "Build the backend" is not a story, because it delivers nothing a user can use until the frontend lands. That is the mini-waterfall the vertical-slice practice exists to prevent.
 
 Patterns that split while keeping each piece valuable:
 
@@ -46,4 +54,8 @@ Patterns that split while keeping each piece valuable:
 
 The test after splitting is the same as before: can each piece ship on its own and teach us something? If yes, you have stories. If no, keep cutting.
 
-_Last updated: Jul 2, 2026_
+Anyone may split implementation or deployment work into tasks, commits, or pull requests without changing the story's acceptance criteria.
+
+If the split changes which acceptance criteria or user outcomes ship independently, anyone may propose it. Briefly describe the proposed stories and where each original criterion would go, then notify product in the existing ticket or team channel for feedback. Until then, the original story remains the source of truth.
+
+_Last updated: Jul 30, 2026_
