@@ -10,21 +10,19 @@ Stories exist to give us three things: a feedback loop (ship it, learn from it),
 
 ## What a good story looks like
 
-A good story should be written in plain English, generally without using technical jargon. Stories should be concise and only include the information
-an engineer needs to implement the ticket. Descriptions should be easily digestable and exclude unnecessary verbiage, particularly information and
-requirements that are implicit in the work.
+A good story should be written in plain English, generally without technical jargon. Stories should be concise and only include the information the team needs to understand and implement the ticket. Descriptions should be easily digestible and exclude unnecessary wording, particularly information and requirements that are already clear from the work.
 
-Stories should not begin with "[A]s a user, I want to do something." It is implied that the user wants to do something, and therefore unnecessary.
+Stories do not need to begin with "As a user, I want to do something." That format is a tool, not a requirement.
 
-Take, for example, this kind of user story:
+For example:
 
 > As a [kind of user], I want [some capability], so that [some outcome].
 
-The outcome is likely implicit in the cabability, so it's unnecesary to include it.
+The same story can be written plainly:
 
-This story be re-written plainly like:
+> We need to add [some capability] for [kind of user] so that [some outcome].
 
-> We need to add the ability for a [kind of user] to do something.
+Whatever format you choose, keep the user and outcome clear. The outcome gives product a reason to prioritize the work and gives the team a way to tell whether it worked.
 
 A useful checklist is INVEST. A good story is:
 
@@ -56,6 +54,8 @@ Patterns that split while keeping each piece valuable:
 
 The test after splitting is the same as before: can each piece ship on its own and teach us something? If yes, you have stories. If no, keep cutting.
 
-Anyone is empowered to split a ticket if they believe a split is appropriate.
+Anyone may split implementation or deployment work into tasks, commits, or pull requests without changing the story's acceptance criteria.
 
-_Last updated: Jul 2, 2026_
+If the split changes which acceptance criteria or user outcomes ship independently, anyone may propose it. Briefly describe the proposed stories and where each original criterion would go, then notify product in the existing ticket or team channel for feedback. Until then, the original story remains the source of truth.
+
+_Last updated: Jul 30, 2026_
